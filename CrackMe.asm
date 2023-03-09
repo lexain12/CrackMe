@@ -33,7 +33,7 @@ start:
 	int 21h
 
 nop
-Answer db 32d, 40 dup (0)
+Answer db 250d, 20 dup (0)
 nop
 RightAnswer db "VOVA KRASAVA", 0dh, 00
 correctMessage db "Congrats, access confirmed$"
