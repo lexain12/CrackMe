@@ -56,6 +56,10 @@ Strcmp 		proc
 
 	cmp byte ptr [si], 00h
 	je @@done
+
+	mov al, byte ptr [di]
+	cmp al, [si]
+	jne @@done
 	
 	inc si
 	inc di
